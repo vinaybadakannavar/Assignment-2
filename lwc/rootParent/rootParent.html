@@ -1,0 +1,10 @@
+<template>
+    <div>
+        <c-picklist-search onpicklistevent={handleEvent}></c-picklist-search>
+    </div>
+    <template if:true={picklistValue}>
+        <div>
+            <c-search-results selected-type={picklistValue}></c-search-results>
+        </div>
+    </template>
+</template>

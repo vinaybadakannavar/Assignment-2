@@ -1,0 +1,12 @@
+<template>
+    
+    <template if:true={copyOfAccountRecords}>
+                <div class="content">
+                    <template for:each={copyOfAccountRecords} for:item="item">
+                        <div class="slds-size_1-of-3 slds-small-size_1-of-3 slds-medium-size_1-of-4 slds-large-size_1-of-3 " key={item.Id}>
+                            <c-card-component account-record={item}></c-card-component>
+                        </div>
+                    </template>
+                </div>
+    </template>
+</template>

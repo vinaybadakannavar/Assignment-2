@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-m-around_small " > 
+        <lightning-card title={accountRecord.Name} icon-name="standard:account">
+            <div class="slds-p-around_small ">
+                <strong>Phone Number :</strong>{accountRecord.Phone}<br />
+                <strong>Industry     :</strong>{accountRecord.Industry}<br />
+                <strong>Type         :</strong>{accountRecord.Type}<br />
+            </div>
+            <div class="slds-align_absolute-center slds-p-around_small">
+                <lightning-button label="Details" variant="brand" onclick={handleClick}></lightning-button>
+            </div>
+        </lightning-card>
+    </div>
+</template>
